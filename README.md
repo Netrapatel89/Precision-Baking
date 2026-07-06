@@ -12,25 +12,9 @@
 
 ## 🗺️ System Architecture
 
-The following diagram illustrates how the Next.js web application coordinates with local Python micro-services and external cloud APIs:
+The Next.js web application coordinates with local Python micro-services and external cloud APIs
 
-```mermaid
-graph TD
-    Client([User Web Interface]) <--> NextJS[Next.js Server API]
-    NextJS <--> DB[(MongoDB Database)]
-    NextJS -- child_process.exec --/ IPC --> Python[Python Runtime]
-    
-    subgraph Python Scripts
-        Python --> Convert[convert.py <br> spaCy NLP / density matching]
-        Python --> ImgPred[image_predict.py <br> Keras CNN Classification]
-        Python --> TextPred[text_predict.py <br> Cosine Similarity & TF-IDF]
-    end
 
-    ImgPred <--> Gemini[Gemini 2.0 Flash API]
-    ImgPred & TextPred <--> YouTube[YouTube Data API]
-```
-
----
 
 ## 🌟 Core Features
 

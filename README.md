@@ -1,4 +1,4 @@
-# Precision Baking 🍰🧪
+# Precision Baking 
 
 [![Next.js Version](https://img.shields.io/badge/Next.js-15.2.4-blue?logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![Python Version](https://img.shields.io/badge/Python-3.9+-yellow?logo=python&logoColor=white)](https://python.org)
